@@ -4,7 +4,8 @@ public class _01_variables {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//1. int 변수 선언
+		//1. int 변수 선언(자료형 변수명)
+		//문장이 끝날 때마다 ; 필수로 입력해야됨
 		int num1;
 		
 		//2. int 변수 초기화
@@ -29,11 +30,18 @@ public class _01_variables {
 		short sNum2 = 2;
 		
 		//7. int로 자동 변환되는 short의 연산 결과
+		//문장(문자열)은 큰 따옴표(") 사용
 		System.out.println("short 연산 결과 출력");
 		System.out.println(sNum1 + sNum2);
 		System.out.println("----------------------------------");
 		
+		//문장(문자열)은 JRE의 자바 클래스 라이브러리에 만들어놓은
+		//클래스를 사용하여 생성한다.(원시타입(자료형)이 아님, 참조타입)
+		String str = "문장(문자열)을 생성하는 클래스";
+		System.out.println(str);
+		
 		//8. char 변수 선언과 초기화
+		//char는 하나의 문자를 값으로 지정하기 때문에 작은 따옴표(') 사용
 		char ch1 = 'A';
 		int ch2 = 'A';
 		
