@@ -14,27 +14,27 @@ public class _01_oneOpOperator {
 		//2-1. 증감연산자의 전위연산자
 		int num2 = 10;
 		
-		System.out.println(++num2);
-		System.out.println(--num2);
+		System.out.println(++num2); //11
+		System.out.println(--num2); //10
 		System.out.println("-------------------");
 		
 		//2-2. 증감연산자의 후위연산자
 		int num3 = 10;
 		
-		System.out.println(num3++);
-		System.out.println(num3--);
+		System.out.println(num3++); //10
+		System.out.println(num3--); //11
 		System.out.println("-------------------");
 		
 		//3. 전위연산자 후위연산자 혼합
 		int num4 = 10;
 		
-		System.out.println(++num4);
-		System.out.println(num4++);
+		System.out.println(++num4); //11
+		System.out.println(num4++); //11출력 후 +1한 12 대입
 		
-		System.out.println(--num4);
-		System.out.println(num4--);
+		System.out.println(--num4); //12에서 -1한 11출력
+		System.out.println(num4--); //11출력 후 -1한 10 대입
 		
-		
+		System.out.println(num4); //10
 		
 		
 		
