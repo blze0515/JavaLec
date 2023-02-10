@@ -26,11 +26,7 @@ public class _03_threeOpOperator {
 			int num = System.in.read();
 			System.out.println(num);
 			System.out.println((char)num);
-			String str = num >= 65 && num <= 90 ? "대문자" : num >= 97 && num <= 122 ? "소문자" : "알파벳만 입력해주세요.";
-			System.out.println(str);
-			
-			char ch = num >= 65 && num <= 90 ? (char)(num + 32) : num >= 97 && num <= 122 ? (char)(num - 32) : '-';
-			System.out.println(ch);
+		
 		} catch(Exception e) {
 			//try 구문의 코드를 실행하다가 예외가 발생하면 catch 구문의 
 			//코드를 실행
