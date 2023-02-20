@@ -14,11 +14,17 @@ public class RockScissPaper {
 	private int score = 0;
 	
 	//승무패 기록을 담아줄 배열
-	private int[] wdl = new int[10];
+	//private int[] wdl = new int[10];
+	private int[] wdl;
 	
 	//게임 실행 메소드
 	public void start() {
 		Scanner sc = new Scanner(System.in);
+		
+		//사용자가 입력한 round 만큼 게임진행
+		System.out.print("진행할 게임의 판 수를 입력하세요.");
+		int round = sc.nextInt();
+		wdl = new int[round];
 		
 		//총 10판 진행
 		for(int i = 0; i < wdl.length; i++) {
@@ -59,7 +65,7 @@ public class RockScissPaper {
 	//사용자 입력 값을 정수형을 변환해주는 메소드
 	public int convertUserInput(Scanner sc) {
 		System.out.print("가위, 바위, 보 중 하나를 입력하세요. : ");
-		String userNumStr = sc.nextLine();
+		String userNumStr = sc.next();
 		
 		if(userNumStr.equals("가위")) {
 			return 1;
