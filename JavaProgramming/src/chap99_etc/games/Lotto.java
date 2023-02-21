@@ -28,6 +28,7 @@ public class Lotto extends GamesClass {
 	
 	Scanner sc = new Scanner(System.in);
 	
+	@Override
 	public void start() {
 		//랜덤 7개의 값이 lottoNum에 담기고 출력
 		generateRandom();
